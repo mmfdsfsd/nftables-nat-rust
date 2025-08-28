@@ -10,6 +10,7 @@ curl -sSLf https://us.arloor.dev/https://github.com/arloor/nftables-nat-rust/rel
 install /tmp/nat /usr/local/bin/nat
 
 #安装nftables
+apt update
 apt install nftables -y
 
 # 创建systemd服务
