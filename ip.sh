@@ -4,9 +4,13 @@ if [ "$(id -u)" -ne 0 ]; then
     echo "Please run as root"
     exit 1
 fi
+
 # 下载可执行文件
 curl -sSLf https://us.arloor.dev/https://github.com/arloor/nftables-nat-rust/releases/download/v1.0.0/nat -o /tmp/nat
 install /tmp/nat /usr/local/bin/nat
+
+#安装nftables
+apt install nftables -y
 
 # 创建systemd服务
 cat > /lib/systemd/system/nat.service <<EOF
