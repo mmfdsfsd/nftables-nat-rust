@@ -6,7 +6,7 @@ if [ "$(id -u)" -ne 0 ]; then
 fi
 
 # 下载可执行文件
-curl -sSLf https://us.arloor.dev/https://github.com/arloor/nftables-nat-rust/releases/download/v1.0.0/nat -o /tmp/nat
+curl -sSLf https://us.arloor.dev/https://github.com/mmfdsfsd/nftables-nat-rust/releases/download/v1.0.0/nat -o /tmp/nat
 install /tmp/nat /usr/local/bin/nat
 
 #安装nftables
